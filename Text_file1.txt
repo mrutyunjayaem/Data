@@ -1,0 +1,103 @@
+State-Space Modelling of Runtime Reliability in Continuous Keyword Spotting Systems
+
+Problem
+
+Keyword Spotting (KWS) systems are generally evaluated using aggregate metrics such as accuracy, F1-score, false accepts, and false rejects. These metrics summarize overall performance but provide limited information about how system reliability changes during continuous operation.
+
+During long-running operation, errors may occur independently, or they may exhibit temporal patterns such as clustering, persistence, degradation periods, and recovery.
+
+The central question is:
+
+«Does a continuously operating KWS system exhibit identifiable reliability states over time, and can these states help anticipate future failures?»
+
+Main Research Problem
+
+The objective is to investigate whether the temporal reliability behaviour of a continuously running KWS system can be represented using state-space models.
+
+The state-space model will not replace the KWS model or perform keyword recognition. Instead, it will act as a reliability-monitoring layer around an existing KWS system.
+
+A possible reliability evolution could resemble:
+
+Stable → Uncertain/Degrading → Failure → Recovery
+
+However, these states should not be assumed beforehand. An important part of the study is to determine whether meaningful reliability states actually emerge from observed runtime behaviour.
+
+What to Investigate
+
+First, run existing KWS models on continuous or constructed long-duration audio streams and collect their behaviour over time.
+
+For each time window, record suitable runtime information such as model confidence, prediction scores, uncertainty, keyword/non-keyword decisions, false accepts, false rejects, acoustic-quality indicators, and other relevant model- or input-level measurements.
+
+Then investigate the temporal structure of failures:
+
+- Do failures occur independently or cluster together?
+- Does a failure increase the likelihood of another failure shortly afterwards?
+- Are there persistent periods of unreliable behaviour?
+- Does the system recover after periods of degradation?
+- Are measurable changes visible before failure episodes?
+- Do different speakers, noise conditions, or acoustic environments produce different reliability behaviour?
+
+If meaningful temporal structure is observed, investigate whether state-space approaches can model this behaviour.
+
+Start with interpretable approaches such as Hidden Markov Models (HMMs) and Hidden Semi-Markov Models (HSMMs) and compare them against simpler non-state-space temporal baselines. More advanced state-space approaches can subsequently be considered if justified by the findings.
+
+Early-Warning Question
+
+The goal should not be limited to identifying a failure after it has already occurred.
+
+The study should investigate:
+
+«Can the estimated current reliability state provide useful warning of an increased risk of failure in the near future?»
+
+Instead of only:
+
+Failure → Detect failure
+
+investigate whether behaviour such as the following exists:
+
+Stable → Detectable degradation → Increased future failure risk → Failure
+
+If such behaviour can be demonstrated consistently, the problem becomes one of early warning of runtime reliability degradation rather than only error detection.
+
+Experimental Comparison
+
+Compare three levels of temporal modelling:
+
+Level 1 — Current-window baseline:
+Estimate reliability using only information available in the current window.
+
+Level 2 — Simple temporal baseline:
+Use recent history, moving statistics, persistence, change points, or similar temporal information.
+
+Level 3 — State-space modelling:
+Use HMM, HSMM, or another suitable state-space approach to infer evolving reliability states.
+
+The main comparison should determine whether explicitly modelling an evolving system state provides useful information beyond current-window and simple temporal approaches.
+
+Generalisation
+
+Evaluate whether any discovered reliability behaviour generalises across conditions.
+
+Possible experiments include unseen speakers, different noise conditions, different acoustic environments, different stream durations, and potentially different KWS models.
+
+This is important for determining whether the identified states represent meaningful reliability dynamics rather than characteristics specific to one dataset or experimental configuration.
+
+Expected Research Contribution
+
+The contribution should not simply be:
+
+«“We applied a state-space model or Mamba to KWS.”»
+
+Instead, investigate:
+
+«Whether continuous KWS systems exhibit latent reliability states, whether these states can be identified using state-space modelling, and whether their temporal evolution provides useful early warning of future failures.»
+
+Possible Paper Direction
+
+From Errors to States: State-Space Modelling of Temporal Reliability in Continuous Keyword Spotting
+
+The study should answer three main research questions:
+
+1. Do continuous KWS failures exhibit meaningful temporal state structure?
+2. Can state-space models identify interpretable reliability regimes from runtime behaviour?
+3. Does modelling these reliability states improve early prediction of future failures compared with current-window and simple temporal baselines?
