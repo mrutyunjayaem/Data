@@ -1,0 +1,266 @@
+{
+ "far": 5.0,
+ "K": 2,
+ "dev_loglik_hmm": {
+  "2": NaN,
+  "3": NaN,
+  "4": NaN,
+  "5": NaN,
+  "6": NaN
+ },
+ "loglik": {
+  "HMM": {
+   "train": -10.470141630352547,
+   "dev": NaN,
+   "test": -10.591083279785959
+  },
+  "HSMM": {
+   "train": -10.419819857993051,
+   "dev": NaN,
+   "test": -10.542948366431611
+  }
+ },
+ "profiles": {
+  "HMM": {
+   "states": [
+    {
+     "state": "S1",
+     "time %": 53.734,
+     "median dwell s": 2.0,
+     "FA/h train": 0.06,
+     "FA/h test": 0.144,
+     "det_max": 0.563,
+     "entropy_mean": 0.417,
+     "blank_mean": 0.678,
+     "rms_db_mean": -26.582,
+     "% clean": 23.195,
+     "% 20 dB": 22.688,
+     "% 10 dB": 20.616,
+     "% 5 dB": 17.989,
+     "% 0 dB": 15.513
+    },
+    {
+     "state": "S2",
+     "time %": 46.266,
+     "median dwell s": 2.0,
+     "FA/h train": 9.863,
+     "FA/h test": 9.651,
+     "det_max": 0.756,
+     "entropy_mean": 0.27,
+     "blank_mean": 0.859,
+     "rms_db_mean": -34.205,
+     "% clean": 20.112,
+     "% 20 dB": 17.104,
+     "% 10 dB": 19.629,
+     "% 5 dB": 19.605,
+     "% 0 dB": 23.55
+    }
+   ],
+   "switch": [
+    {
+     "from": "S1",
+     "S1": 0.0,
+     "S2": 1.0
+    },
+    {
+     "from": "S2",
+     "S1": 1.0,
+     "S2": 0.0
+    }
+   ],
+   "order": [
+    1,
+    0
+   ]
+  },
+  "HSMM": {
+   "states": [
+    {
+     "state": "S1",
+     "time %": 53.705,
+     "median dwell s": 2.0,
+     "FA/h train": 0.074,
+     "FA/h test": 0.15,
+     "det_max": 0.563,
+     "entropy_mean": 0.417,
+     "blank_mean": 0.678,
+     "rms_db_mean": -26.544,
+     "% clean": 23.12,
+     "% 20 dB": 22.632,
+     "% 10 dB": 20.624,
+     "% 5 dB": 18.029,
+     "% 0 dB": 15.594
+    },
+    {
+     "state": "S2",
+     "time %": 46.295,
+     "median dwell s": 2.0,
+     "FA/h train": 9.836,
+     "FA/h test": 9.639,
+     "det_max": 0.755,
+     "entropy_mean": 0.269,
+     "blank_mean": 0.859,
+     "rms_db_mean": -34.244,
+     "% clean": 20.201,
+     "% 20 dB": 17.171,
+     "% 10 dB": 19.62,
+     "% 5 dB": 19.558,
+     "% 0 dB": 23.45
+    }
+   ],
+   "switch": [
+    {
+     "from": "S1",
+     "S1": 0.0,
+     "S2": 1.0
+    },
+    {
+     "from": "S2",
+     "S1": 1.0,
+     "S2": 0.0
+    }
+   ],
+   "order": [
+    1,
+    0
+   ]
+  }
+ },
+ "primary": {
+  "far": 5.0,
+  "horizon_sec": 30,
+  "base_rate": 0.036577414721250534,
+  "positive_windows": 3478,
+  "ap": {
+   "L1 current window": 0.05209753941178065,
+   "L2 + moving statistics": 0.06803459974747358,
+   "L3 + HMM state": 0.06839788152162155,
+   "L3 + HSMM state": 0.06838269940310332
+  },
+  "ap_ci": {
+   "L1 current window": [
+    0.04298851156315213,
+    0.06126762205537192
+   ],
+   "L2 + moving statistics": [
+    0.04977588638939995,
+    0.08944744794490149
+   ],
+   "L3 + HMM state": [
+    0.050116144620185245,
+    0.08960746189715044
+   ],
+   "L3 + HSMM state": [
+    0.050100865965492625,
+    0.08961359445643598
+   ]
+  },
+  "gain": {
+   "L2 + moving statistics vs L1 current window": [
+    0.015937060335692935,
+    [
+     0.0032294259017216966,
+     0.03450717223620014
+    ]
+   ],
+   "L3 + HMM state vs L2 + moving statistics": [
+    0.00036328177414796103,
+    [
+     -1.53811816918415e-05,
+     0.0010549382358574552
+    ]
+   ],
+   "L3 + HSMM state vs L2 + moving statistics": [
+    0.00034809965562973555,
+    [
+     -1.7419358866799233e-05,
+     0.0010289681464853333
+    ]
+   ]
+  }
+ },
+ "horizons": [
+  {
+   "horizon s": 1,
+   "base rate": 0.001252099871635437,
+   "L1 current window": 0.1276861858218406,
+   "L2 + moving statistics": 0.11953474833075566,
+   "L3 + HMM state": 0.1190162746668283,
+   "L3 + HSMM state": 0.1190064212324231
+  },
+  {
+   "horizon s": 3,
+   "base rate": 0.003789618844166398,
+   "L1 current window": 0.03191144969029406,
+   "L2 + moving statistics": 0.023520074795531407,
+   "L3 + HMM state": 0.025731050997621716,
+   "L3 + HSMM state": 0.025769443946136825
+  },
+  {
+   "horizon s": 5,
+   "base rate": 0.006288191303610802,
+   "L1 current window": 0.027213032966608205,
+   "L2 + moving statistics": 0.02243885780659183,
+   "L3 + HMM state": 0.02358417688075641,
+   "L3 + HSMM state": 0.02359209199948196
+  },
+  {
+   "horizon s": 10,
+   "base rate": 0.012583023868501186,
+   "L1 current window": 0.028511451866833563,
+   "L2 + moving statistics": 0.030663265519034817,
+   "L3 + HMM state": 0.03119145304373792,
+   "L3 + HSMM state": 0.03116058986887168
+  },
+  {
+   "horizon s": 30,
+   "base rate": 0.036577414721250534,
+   "L1 current window": 0.05209753941178065,
+   "L2 + moving statistics": 0.06803459974747358,
+   "L3 + HMM state": 0.06839788152162155,
+   "L3 + HSMM state": 0.06838269940310332
+  }
+ ],
+ "conditions": [
+  {
+   "condition": "clean",
+   "positive windows": 539,
+   "L1 current window": 0.06437738642172093,
+   "L2 + moving statistics": 0.10853637557112511,
+   "L3 + HMM state": 0.11045474711104758,
+   "L3 + HSMM state": 0.11023064350217801
+  },
+  {
+   "condition": "20 dB",
+   "positive windows": 621,
+   "L1 current window": 0.061523968727840925,
+   "L2 + moving statistics": 0.04646231116578317,
+   "L3 + HMM state": 0.04679638833734303,
+   "L3 + HSMM state": 0.046829363553004544
+  },
+  {
+   "condition": "10 dB",
+   "positive windows": 1000,
+   "L1 current window": 0.07430912799490245,
+   "L2 + moving statistics": 0.10851949963591248,
+   "L3 + HMM state": 0.10822039170757505,
+   "L3 + HSMM state": 0.10821821333200363
+  },
+  {
+   "condition": "5 dB",
+   "positive windows": 549,
+   "L1 current window": 0.042654397822968905,
+   "L2 + moving statistics": 0.056588098058170416,
+   "L3 + HMM state": 0.05725207179563176,
+   "L3 + HSMM state": 0.05722419662127806
+  },
+  {
+   "condition": "0 dB",
+   "positive windows": 769,
+   "L1 current window": 0.04964515872372577,
+   "L2 + moving statistics": 0.055142222541607014,
+   "L3 + HMM state": 0.055389604568851634,
+   "L3 + HSMM state": 0.05539302020171898
+  }
+ ]
+}
