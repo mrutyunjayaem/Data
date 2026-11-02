@@ -1,0 +1,40 @@
+{
+ "seed": 1,
+ "stream_minutes": 60,
+ "min_stream_minutes": 20,
+ "block_minutes": [
+  3.0,
+  6.0
+ ],
+ "max_run_minutes": 2.0,
+ "conditions": [
+  "clean",
+  20,
+  10,
+  5,
+  0
+ ],
+ "noise_files_per_block": 5,
+ "gap_seconds": [
+  0.2,
+  1.0
+ ],
+ "noise_split": [
+  0.5,
+  0.25,
+  0.25
+ ],
+ "keyword": "HH EY1 S N IH1 P S",
+ "log_bonus": 3.0,
+ "timeout": 100,
+ "l_his": 30,
+ "l_fut": 0,
+ "data_dir": "/scratch/ponna/mrutyunjaya/output/data",
+ "split": "official-hey-snips",
+ "features": "fbank40-cmvn-splice5-skip3-v2",
+ "model": {
+  "size": 8398268,
+  "mtime": 1793439766
+ },
+ "data": "f7f663e60f8b43c3cc90840a2f6028428962dda7"
+}
