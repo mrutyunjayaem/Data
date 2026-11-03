@@ -1,0 +1,66 @@
+What to do next (no new experiments)
+
+All of this runs on logs you already have.
+
+Rerun the nulls with 1000 or more shuffles. This improves the p-value resolution (the floor is now about 0.005), which matters most for seed 2 (p=0.045).
+Replace the speaker null with a speaker-adjusted test. Use a cluster bootstrap over speakers or a mixed-effects model on the existing event times. This turns “not separable from speakers” into a real estimate.
+Audit label timing and the decoder-fix timeline. Check the 0.435 s availability lag against every horizon, and confirm the 99.8% recall was measured after the fix.
+Two cheap controls on the existing 9-feature logs: a nonlinear Level 2 baseline (gradient boosting), and a non-temporal GMM with K=6. Also extend K to 8–12 or report BIC, since 6 is the top of the range you tried. These are reanalyses, not new data.
+Write up with the claims you can defend:
+False alarms cluster beyond noise (RR about 2 at 30 s), but this isn’t yet separable from speaker effects.
+The states are short acoustic risk contexts that transfer to unseen speakers.
+State modelling gives no early-warning gain over recent history.
+State the limits plainly: one spotter, false alarms only, constructed streams, 5 FA/h.
+
+Related work to position against
+
+The spotter you built (reproduction context)
+
+The DFSMN, CTC and CDC design follows a published streaming approach. It proposes a streaming decoding algorithm that detects the keyword start at any position, and uses cross-layer discrimination consistency to separate true keywords from false alarm samples.
+arxiv
+A follow-up extends CDC to multiple decoding heads. It combines a CTC-Transducer system with multi-head frame-asynchronous decoding and reports a 47–63% speed-up over frame-synchronous baselines.
+arxiv
+A noise-robust variant uses the same backbone. NTC-KWS builds on a 6-layer DFSMN with 512 hidden and 320 projection sizes, and reports strong results at low SNR on clean and noisy Hey Snips.
+arxiv
+A newer two-stage line reports 99.13% recall at one false alarm per hour on Hey-Snips in a zero-shot setting. This is a useful comparison point for your recall numbers.
+arxiv
+
+How KWS false alarms are usually treated (what your work contrasts with)
+
+The standard view is per-threshold, not temporal. A survey describes streaming mode, where a keyword is detected each time the score exceeds a tuned threshold, and the same keyword occurrence can trigger repeatedly across consecutive segments. This relates directly to your 2 s event merging.
+arxiv
+Older confidence work focuses on scoring each hypothesis, not on timing. For example, keyword hypothesis scores are treated as a confidence estimation problem.
+cam
+
+Reliability monitoring without ground truth (closest to your “watch only” layer)
+
+Performance monitoring predicts ASR quality from system behavior without ground truth, using entropy, the M-measure and an RNN predictor, with an average prediction error of 8.8%. Your entropy and blank features come from this family.
+arxiv
+A more recent label-free line trains a regression model on features to predict WER and CER without labels.
+arxiv
+
+HMM and HSMM for health states and failure prediction (source of your RQ2 framing)
+
+Prognostics work uses a similar structure. One model has healthy, warning and failure states, with only failure observable and sojourn times modelled explicitly, and a higher-order HSMM framework estimates hidden health and remaining useful life.
+peeref
+nsf
+A reliability review notes that choosing the number of HMM states and predicting failures are not well covered in the literature. This supports your point about state-count selection.
+ugr
+
+How your work fits
+
+Strengths: you evaluate temporal structure of KWS false alarms with proper nulls, and test a state-based early-warning idea from the reliability-engineering tradition. A clear negative result is a defensible contribution.
+Caveat: the engineering-reliability literature assumes a degradation path (healthy → warning → failure). Your data show states lasting about 1 s, so that framing doesn’t transfer at this resolution, and you should say so directly.
+Missing piece: I didn’t find a KWS paper that measures temporal clustering of false alarms against noise and speaker nulls. If that holds after a more thorough search, it is your strongest novelty claim.
+
+already done work by others: Streaming Keyword Spotting Boosted by Cross-layer Discrimination Consistency
+MFA-KWS
+NTC-KWS
+Dual Data Scaling for Robust Two-Stage User-Defined KWS
+Deep Spoken Keyword Spotting: An Overview
+Seigel et al., confidence-based keyword hypothesis scores
+Performance Monitoring for End-to-End Speech Recognition
+On the Robust Approximation of ASR Metrics
+Khaleghei & Makis, residual life prediction (HSMM)
+Higher-order HSMM prognostics
+Hidden Markov models in reliability and maintenance
