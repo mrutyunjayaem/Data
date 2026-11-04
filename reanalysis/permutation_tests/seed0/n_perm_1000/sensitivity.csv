@@ -1,0 +1,49 @@
+far,test,p,q_bh,primary
+0.5,RR 5 s vs within-block null,1.0,1.0,False
+0.5,RR 5 s vs within-run null,1.0,1.0,False
+0.5,RR 10 s vs within-block null,1.0,1.0,False
+0.5,RR 10 s vs within-run null,1.0,1.0,False
+0.5,RR 30 s vs within-block null,1.0,1.0,False
+0.5,RR 30 s vs within-run null,1.0,1.0,False
+0.5,dispersion 1 min vs within-block null,1.0,1.0,False
+0.5,dispersion 5 min vs within-block null,1.0,1.0,False
+0.5,dispersion 10 min vs within-block null,0.994005994005994,1.0,False
+0.5,dispersion 30 min vs within-block null,1.0,1.0,False
+0.5,gap CV vs within-block null,,,False
+0.5,episode share vs within-block null,1.0,1.0,False
+1.0,RR 5 s vs within-block null,1.0,1.0,False
+1.0,RR 5 s vs within-run null,1.0,1.0,False
+1.0,RR 10 s vs within-block null,1.0,1.0,False
+1.0,RR 10 s vs within-run null,1.0,1.0,False
+1.0,RR 30 s vs within-block null,1.0,1.0,False
+1.0,RR 30 s vs within-run null,1.0,1.0,False
+1.0,dispersion 1 min vs within-block null,1.0,1.0,False
+1.0,dispersion 5 min vs within-block null,1.0,1.0,False
+1.0,dispersion 10 min vs within-block null,0.08791208791208792,0.2888540031397175,False
+1.0,dispersion 30 min vs within-block null,1.0,1.0,False
+1.0,gap CV vs within-block null,,,False
+1.0,episode share vs within-block null,1.0,1.0,False
+2.0,RR 5 s vs within-block null,0.003996003996003996,0.04595404595404595,False
+2.0,RR 5 s vs within-run null,0.008991008991008992,0.06893106893106894,False
+2.0,RR 10 s vs within-block null,0.017982017982017984,0.1033966033966034,False
+2.0,RR 10 s vs within-run null,0.14185814185814186,0.435031635031635,False
+2.0,RR 30 s vs within-block null,0.2057942057942058,0.5568549097960862,False
+2.0,RR 30 s vs within-run null,0.6123876123876124,1.0,False
+2.0,dispersion 1 min vs within-block null,0.005994005994005994,0.05514485514485514,False
+2.0,dispersion 5 min vs within-block null,0.36063936063936064,0.9216339216339217,False
+2.0,dispersion 10 min vs within-block null,0.9020979020979021,1.0,False
+2.0,dispersion 30 min vs within-block null,1.0,1.0,False
+2.0,gap CV vs within-block null,0.5824175824175825,1.0,False
+2.0,episode share vs within-block null,0.02197802197802198,0.11233211233211235,False
+5.0,RR 5 s vs within-block null,0.000999000999000999,0.022977022977022976,False
+5.0,RR 5 s vs within-run null,0.04595404595404595,0.17615717615717616,False
+5.0,RR 10 s vs within-block null,0.07992007992007992,0.28279412894797507,False
+5.0,RR 10 s vs within-run null,0.8201798201798202,1.0,False
+5.0,RR 30 s vs within-block null,0.015984015984015984,0.1033966033966034,True
+5.0,RR 30 s vs within-run null,0.6313686313686314,1.0,False
+5.0,dispersion 1 min vs within-block null,0.000999000999000999,0.022977022977022976,False
+5.0,dispersion 5 min vs within-block null,0.03296703296703297,0.15164835164835164,False
+5.0,dispersion 10 min vs within-block null,0.03796203796203796,0.15875034056852239,False
+5.0,dispersion 30 min vs within-block null,0.16083916083916083,0.4624125874125874,False
+5.0,gap CV vs within-block null,0.42157842157842157,1.0,False
+5.0,episode share vs within-block null,0.002997002997002997,0.04595404595404595,False

@@ -1,0 +1,116 @@
+[
+  {
+    "seed": 0,
+    "n_permutations": 1000,
+    "primary": {
+      "far": 5.0,
+      "horizon_sec": 30,
+      "events_test": 104,
+      "rr": 2.114094475774665,
+      "ci": [
+        1.0149969038789544,
+        3.2133895178886323
+      ],
+      "null": 1.1876193097455392,
+      "p": 0.015984015984015984,
+      "significant": true
+    },
+    "elapsed_seconds": 241.06,
+    "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/permutation_tests/seed0/n_perm_1000"
+  },
+  {
+    "seed": 0,
+    "n_permutations": 2000,
+    "primary": {
+      "far": 5.0,
+      "horizon_sec": 30,
+      "events_test": 104,
+      "rr": 2.114094475774665,
+      "ci": [
+        1.0149969038789544,
+        3.2133895178886323
+      ],
+      "null": 1.178787976369408,
+      "p": 0.015992003998001,
+      "significant": true
+    },
+    "elapsed_seconds": 476.58,
+    "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/permutation_tests/seed0/n_perm_2000"
+  },
+  {
+    "seed": 1,
+    "n_permutations": 1000,
+    "primary": {
+      "far": 5.0,
+      "horizon_sec": 30,
+      "events_test": 132,
+      "rr": 2.1796633013435183,
+      "ci": [
+        1.064051885327887,
+        3.499261510978183
+      ],
+      "null": 1.2670891160518905,
+      "p": 0.002997002997002997,
+      "significant": true
+    },
+    "elapsed_seconds": 258.03,
+    "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/permutation_tests/seed1/n_perm_1000"
+  },
+  {
+    "seed": 1,
+    "n_permutations": 2000,
+    "primary": {
+      "far": 5.0,
+      "horizon_sec": 30,
+      "events_test": 132,
+      "rr": 2.1796633013435183,
+      "ci": [
+        1.064051885327887,
+        3.499261510978183
+      ],
+      "null": 1.2713916561067917,
+      "p": 0.005497251374312844,
+      "significant": true
+    },
+    "elapsed_seconds": 515.5,
+    "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/permutation_tests/seed1/n_perm_2000"
+  },
+  {
+    "seed": 2,
+    "n_permutations": 1000,
+    "primary": {
+      "far": 5.0,
+      "horizon_sec": 30,
+      "events_test": 143,
+      "rr": 1.8323876324855037,
+      "ci": [
+        1.0252555025760095,
+        2.6724248221989444
+      ],
+      "null": 1.2698806630353368,
+      "p": 0.04395604395604396,
+      "significant": true
+    },
+    "elapsed_seconds": 247.78,
+    "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/permutation_tests/seed2/n_perm_1000"
+  },
+  {
+    "seed": 2,
+    "n_permutations": 2000,
+    "primary": {
+      "far": 5.0,
+      "horizon_sec": 30,
+      "events_test": 143,
+      "rr": 1.8323876324855037,
+      "ci": [
+        1.0252555025760095,
+        2.6724248221989444
+      ],
+      "null": 1.2686888869796908,
+      "p": 0.04047976011994003,
+      "significant": true
+    },
+    "elapsed_seconds": 494.92,
+    "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/permutation_tests/seed2/n_perm_2000"
+  }
+]

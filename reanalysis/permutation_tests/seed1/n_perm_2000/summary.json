@@ -1,0 +1,19 @@
+{
+  "seed": 1,
+  "n_permutations": 2000,
+  "primary": {
+    "far": 5.0,
+    "horizon_sec": 30,
+    "events_test": 132,
+    "rr": 2.1796633013435183,
+    "ci": [
+      1.064051885327887,
+      3.499261510978183
+    ],
+    "null": 1.2713916561067917,
+    "p": 0.005497251374312844,
+    "significant": true
+  },
+  "elapsed_seconds": 515.5,
+  "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/permutation_tests/seed1/n_perm_2000"
+}
