@@ -1,0 +1,33 @@
+{
+  "completed": [
+    {
+      "seed": 0,
+      "selected_K": 12,
+      "best_dev_loglik": -6.425284080710188,
+      "gmm_dev_loglik": -7.902081087408937,
+      "gmm_test_loglik": -7.963190057989558,
+      "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed0",
+      "report": "/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed0/stage2_extended_report.md"
+    },
+    {
+      "seed": 1,
+      "selected_K": 12,
+      "best_dev_loglik": -6.313308118674671,
+      "gmm_dev_loglik": -7.610224090922785,
+      "gmm_test_loglik": -7.948114118113732,
+      "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed1",
+      "report": "/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed1/stage2_extended_report.md"
+    },
+    {
+      "seed": 2,
+      "selected_K": 12,
+      "best_dev_loglik": -6.569583112655763,
+      "gmm_dev_loglik": -7.856760554604328,
+      "gmm_test_loglik": -7.753311955504855,
+      "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed2",
+      "report": "/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed2/stage2_extended_report.md"
+    }
+  ],
+  "failures": [],
+  "total_minutes": 23.7713702082634
+}

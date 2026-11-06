@@ -1,0 +1,4 @@
+seed,selected_K,best_dev_loglik,gmm_dev_loglik,gmm_test_loglik,output_directory,report
+0,12,-6.425284080710188,-7.902081087408937,-7.963190057989558,/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed0,/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed0/stage2_extended_report.md
+1,12,-6.313308118674671,-7.610224090922785,-7.948114118113732,/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed1,/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed1/stage2_extended_report.md
+2,12,-6.569583112655763,-7.856760554604328,-7.753311955504855,/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed2,/scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed2/stage2_extended_report.md

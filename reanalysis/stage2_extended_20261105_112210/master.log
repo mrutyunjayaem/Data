@@ -1,0 +1,303 @@
+===========================================================================
+EXTENDED TEMPORAL KWS STAGE 2 REANALYSIS
+===========================================================================
+Start time: 2026-11-05 11:22:10.419952
+Output root: /scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210
+Seeds: [0, 1, 2]
+HMM K candidates: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+GMM K: 6
+
+Existing results will NOT be overwritten.
+
+Loading original notebook functions...
+Loading notebook code cell 0
+Loading notebook code cell 1
+Loading notebook code cell 2
+Loading notebook code cell 3
+Loading notebook code cell 4
+Loading notebook code cell 5
+Loading notebook code cell 6
+Loading notebook code cell 7
+Loading notebook code cell 8
+Loading notebook code cell 9
+Loading notebook code cell 10
+Loading notebook code cell 11
+Loading notebook code cell 12
+Loading notebook code cell 13
+Loading notebook code cell 14
+Original notebook functions loaded.
+
+
+###########################################################################
+STARTING SEED 0
+###########################################################################
+
+Loading existing results from: /scratch/ponna/mrutyunjaya/output/phoneme_temporal_analysis/run_18aca29275
+Loaded 107 streams.
+Loaded 398,684 windows.
+Thresholds: {0.5: 0.9555118978019612, 1.0: 0.9382948577399834, 2.0: 0.9204838573924026, 5.0: 0.9061974585053961}
+
+Standardising runtime features using training data...
+train: 209,307 windows
+dev: 94,684 windows
+test: 94,693 windows
+
+=================================================================
+SEED 0: HMM STATE SEARCH
+=================================================================
+
+Fitting HMM with K=2...
+HMM K=2: dev log-likelihood/window=-10.421179; time=0.05 min
+
+Fitting HMM with K=3...
+HMM K=3: dev log-likelihood/window=-9.413965; time=0.29 min
+
+Fitting HMM with K=4...
+HMM K=4: dev log-likelihood/window=-8.759799; time=0.11 min
+
+Fitting HMM with K=5...
+HMM K=5: dev log-likelihood/window=-8.138886; time=1.01 min
+
+Fitting HMM with K=6...
+HMM K=6: dev log-likelihood/window=-7.779702; time=0.44 min
+
+Fitting HMM with K=7...
+HMM K=7: dev log-likelihood/window=-7.330827; time=0.37 min
+
+Fitting HMM with K=8...
+HMM K=8: dev log-likelihood/window=-7.042696; time=0.89 min
+
+Fitting HMM with K=9...
+HMM K=9: dev log-likelihood/window=-6.892988; time=1.19 min
+
+Fitting HMM with K=10...
+HMM K=10: dev log-likelihood/window=-6.736038; time=1.10 min
+
+Fitting HMM with K=11...
+HMM K=11: dev log-likelihood/window=-6.572949; time=0.86 min
+
+Fitting HMM with K=12...
+HMM K=12: dev log-likelihood/window=-6.425284; time=0.45 min
+
+HMM model selection completed.
+Selected K=12
+Best dev log-likelihood=-6.425284
+
+Fitting HSMM using selected HMM state count...
+HSMM completed in 0.24 minutes.
+
+=================================================================
+FITTING NON-TEMPORAL GMM CONTROL
+=================================================================
+GMM fitting sample: 150,000 / 209,307 train windows
+GMM converged: True
+GMM iterations: 18
+GMM elapsed: 0.05 min
+GMM train: loglik/window=-7.917105; BIC=3315595.44; AIC=3314437.01
+GMM dev: loglik/window=-7.902081; BIC=1497696.08; AIC=1496627.29
+GMM test: loglik/window=-7.963190; BIC=1509411.51; AIC=1508342.71
+
+Calculating filtered state probabilities...
+train HMM loglik/window: -6.408918
+train HSMM loglik/window: -6.405072
+dev HMM loglik/window: -6.425284
+dev HSMM loglik/window: -6.422246
+test HMM loglik/window: -6.464886
+test HSMM loglik/window: -6.462139
+
+Primary FAR: 5.0
+
+Evaluating early-warning models...
+
+Building warning-model feature matrices...
+Primary horizon: 30 seconds
+Test positive windows: 2879
+
+Report saved: /scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed0/stage2_extended_report.md
+SEED 0 COMPLETED in 7.84 minutes.
+
+
+###########################################################################
+STARTING SEED 1
+###########################################################################
+
+Loading existing results from: /scratch/ponna/mrutyunjaya/output/phoneme_temporal_analysis_seed1/run_b005f44614
+Loaded 107 streams.
+Loaded 398,688 windows.
+Thresholds: {0.5: 0.9457492530340068, 1.0: 0.930941194295637, 2.0: 0.9188775718206996, 5.0: 0.9016174972053093}
+
+Standardising runtime features using training data...
+train: 209,258 windows
+dev: 93,572 windows
+test: 95,858 windows
+
+=================================================================
+SEED 1: HMM STATE SEARCH
+=================================================================
+
+Fitting HMM with K=2...
+HMM K=2: dev log-likelihood/window=-10.364739; time=0.05 min
+
+Fitting HMM with K=3...
+HMM K=3: dev log-likelihood/window=-9.396614; time=0.30 min
+
+Fitting HMM with K=4...
+HMM K=4: dev log-likelihood/window=-8.730347; time=0.12 min
+
+Fitting HMM with K=5...
+HMM K=5: dev log-likelihood/window=-8.087566; time=0.24 min
+
+Fitting HMM with K=6...
+HMM K=6: dev log-likelihood/window=-7.677763; time=0.38 min
+
+Fitting HMM with K=7...
+HMM K=7: dev log-likelihood/window=-7.223289; time=0.34 min
+
+Fitting HMM with K=8...
+HMM K=8: dev log-likelihood/window=-6.938621; time=1.22 min
+
+Fitting HMM with K=9...
+HMM K=9: dev log-likelihood/window=-6.817168; time=0.85 min
+
+Fitting HMM with K=10...
+HMM K=10: dev log-likelihood/window=-6.627188; time=0.94 min
+
+Fitting HMM with K=11...
+HMM K=11: dev log-likelihood/window=-6.491584; time=1.10 min
+
+Fitting HMM with K=12...
+HMM K=12: dev log-likelihood/window=-6.313308; time=0.88 min
+
+HMM model selection completed.
+Selected K=12
+Best dev log-likelihood=-6.313308
+
+Fitting HSMM using selected HMM state count...
+HSMM completed in 0.23 minutes.
+
+=================================================================
+FITTING NON-TEMPORAL GMM CONTROL
+=================================================================
+GMM fitting sample: 150,000 / 209,258 train windows
+GMM converged: True
+GMM iterations: 29
+GMM elapsed: 0.06 min
+GMM train: loglik/window=-7.610442; BIC=3186476.09; AIC=3185317.69
+GMM dev: loglik/window=-7.610224; BIC=1425501.23; AIC=1424433.78
+GMM test: loglik/window=-7.948114; BIC=1525076.83; AIC=1524006.65
+
+Calculating filtered state probabilities...
+train HMM loglik/window: -6.303796
+train HSMM loglik/window: -6.300295
+dev HMM loglik/window: -6.313308
+dev HSMM loglik/window: -6.310020
+test HMM loglik/window: -6.424071
+test HSMM loglik/window: -6.421201
+
+Primary FAR: 5.0
+
+Evaluating early-warning models...
+
+Building warning-model feature matrices...
+Primary horizon: 30 seconds
+Test positive windows: 3785
+
+Report saved: /scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed1/stage2_extended_report.md
+SEED 1 COMPLETED in 7.60 minutes.
+
+
+###########################################################################
+STARTING SEED 2
+###########################################################################
+
+Loading existing results from: /scratch/ponna/mrutyunjaya/output/phoneme_temporal_analysis_seed2/run_16a244efe3
+Loaded 107 streams.
+Loaded 399,468 windows.
+Thresholds: {0.5: 0.9513773620126403, 1.0: 0.9289028346533834, 2.0: 0.9199276268479175, 5.0: 0.9028711616989635}
+
+Standardising runtime features using training data...
+train: 209,269 windows
+dev: 94,304 windows
+test: 95,895 windows
+
+=================================================================
+SEED 2: HMM STATE SEARCH
+=================================================================
+
+Fitting HMM with K=2...
+HMM K=2: dev log-likelihood/window=-10.831860; time=0.05 min
+
+Fitting HMM with K=3...
+HMM K=3: dev log-likelihood/window=-9.896278; time=0.35 min
+
+Fitting HMM with K=4...
+HMM K=4: dev log-likelihood/window=-9.243507; time=0.11 min
+
+Fitting HMM with K=5...
+HMM K=5: dev log-likelihood/window=-8.355960; time=0.34 min
+
+Fitting HMM with K=6...
+HMM K=6: dev log-likelihood/window=-7.918485; time=0.50 min
+
+Fitting HMM with K=7...
+HMM K=7: dev log-likelihood/window=-7.444076; time=0.34 min
+
+Fitting HMM with K=8...
+HMM K=8: dev log-likelihood/window=-7.167144; time=1.23 min
+
+Fitting HMM with K=9...
+HMM K=9: dev log-likelihood/window=-7.052323; time=0.55 min
+
+Fitting HMM with K=10...
+HMM K=10: dev log-likelihood/window=-6.870752; time=1.36 min
+
+Fitting HMM with K=11...
+HMM K=11: dev log-likelihood/window=-6.728143; time=0.81 min
+
+Fitting HMM with K=12...
+HMM K=12: dev log-likelihood/window=-6.569583; time=0.88 min
+
+HMM model selection completed.
+Selected K=12
+Best dev log-likelihood=-6.569583
+
+Fitting HSMM using selected HMM state count...
+HSMM completed in 0.24 minutes.
+
+=================================================================
+FITTING NON-TEMPORAL GMM CONTROL
+=================================================================
+GMM fitting sample: 150,000 / 209,269 train windows
+GMM converged: True
+GMM iterations: 34
+GMM elapsed: 0.07 min
+GMM train: loglik/window=-7.742913; BIC=3242087.71; AIC=3240929.31
+GMM dev: loglik/window=-7.856761; BIC=1483142.23; AIC=1482073.89
+GMM test: loglik/window=-7.753312; BIC=1488303.92; AIC=1487233.70
+
+Calculating filtered state probabilities...
+train HMM loglik/window: -6.461684
+train HSMM loglik/window: -6.458318
+dev HMM loglik/window: -6.569583
+dev HSMM loglik/window: -6.566490
+test HMM loglik/window: -6.465933
+test HSMM loglik/window: -6.462956
+
+Primary FAR: 5.0
+
+Evaluating early-warning models...
+
+Building warning-model feature matrices...
+Primary horizon: 30 seconds
+Test positive windows: 4101
+
+Report saved: /scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210/seed2/stage2_extended_report.md
+SEED 2 COMPLETED in 7.63 minutes.
+
+===========================================================================
+ALL SEED RUNS FINISHED
+===========================================================================
+Successful seeds: [0, 1, 2]
+Failed seeds: []
+Total time: 23.77 minutes
+Output directory: /scratch/ponna/mrutyunjaya/output/reanalysis/stage2_extended_20261105_112210
