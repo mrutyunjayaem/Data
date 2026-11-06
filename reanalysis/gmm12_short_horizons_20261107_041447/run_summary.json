@@ -1,0 +1,10 @@
+{
+  "completed_seeds": [
+    0,
+    1,
+    2
+  ],
+  "failed_seeds": [],
+  "total_minutes": 3.2664423545201617,
+  "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/gmm12_short_horizons_20261107_041447"
+}

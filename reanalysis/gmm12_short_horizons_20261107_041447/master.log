@@ -1,0 +1,139 @@
+===========================================================================
+MATCHED HMM-12 vs GMM-12: 3s / 5s SHORT-HORIZON REANALYSIS
+===========================================================================
+Start: 2026-11-07 04:14:47.863758
+Output: /scratch/ponna/mrutyunjaya/output/reanalysis/gmm12_short_horizons_20261107_041447
+Seeds: [0, 1, 2]
+HMM components: 12 (loaded; not refitted)
+GMM components: 12
+Horizons: [3, 5]
+No KWS training, audio processing, detector inference, HMM fitting or HSMM fitting.
+Loading notebook functions from cells 0-14...
+  Loading notebook code cell 0
+  Loading notebook code cell 1
+  Loading notebook code cell 2
+  Loading notebook code cell 3
+  Loading notebook code cell 4
+  Loading notebook code cell 5
+  Loading notebook code cell 6
+  Loading notebook code cell 7
+  Loading notebook code cell 8
+  Loading notebook code cell 9
+  Loading notebook code cell 10
+  Loading notebook code cell 11
+  Loading notebook code cell 12
+  Loading notebook code cell 13
+  Loading notebook code cell 14
+Notebook functions loaded.
+
+###########################################################################
+STARTING SEED 0
+###########################################################################
+Loading saved windows: /scratch/ponna/mrutyunjaya/output/phoneme_temporal_analysis/run_18aca29275
+Loaded 107 streams and 398,684 windows.
+train: 209,307 windows
+dev: 94,684 windows
+test: 94,693 windows
+Loaded existing HMM-12 parameters for seed 0.
+Fitting GMM-12 on 150,000 of 209,307 training windows...
+GMM converged: True; iterations: 40
+GMM-12 train: loglik/window=-6.603857
+GMM-12 dev: loglik/window=-6.606018
+GMM-12 test: loglik/window=-6.657228
+train HMM-12 loglik/window: -6.408918
+dev HMM-12 loglik/window: -6.425284
+test HMM-12 loglik/window: -6.464886
+
+Seed 0, horizon 3s:
+  Test windows=94,594; positives=311; base rate=0.00329
+  L1 current window: AP=0.02303, 95% CI [0.01622, 0.03211]
+  L2 + moving statistics: AP=0.01768, 95% CI [0.01052, 0.02742]
+  L3 + HMM state: AP=0.02961, 95% CI [0.01702, 0.05156]
+  L3 + GMM state: AP=0.03121, 95% CI [0.01720, 0.05597]
+  HMM-12 minus GMM-12: delta AP=-0.00160, 95% CI [-0.00616, 0.00071]
+
+Seed 0, horizon 5s:
+  Test windows=94,544; positives=512; base rate=0.00542
+  L1 current window: AP=0.01952, 95% CI [0.01464, 0.02684]
+  L2 + moving statistics: AP=0.01857, 95% CI [0.01190, 0.02884]
+  L3 + HMM state: AP=0.02398, 95% CI [0.01457, 0.04020]
+  L3 + GMM state: AP=0.02528, 95% CI [0.01533, 0.04297]
+  HMM-12 minus GMM-12: delta AP=-0.00130, 95% CI [-0.00446, 0.00049]
+SEED 0 COMPLETED in 1.06 minutes.
+
+###########################################################################
+STARTING SEED 1
+###########################################################################
+Loading saved windows: /scratch/ponna/mrutyunjaya/output/phoneme_temporal_analysis_seed1/run_b005f44614
+Loaded 107 streams and 398,688 windows.
+train: 209,258 windows
+dev: 93,572 windows
+test: 95,858 windows
+Loaded existing HMM-12 parameters for seed 1.
+Fitting GMM-12 on 150,000 of 209,258 training windows...
+GMM converged: True; iterations: 27
+GMM-12 train: loglik/window=-6.650899
+GMM-12 dev: loglik/window=-6.664123
+GMM-12 test: loglik/window=-7.486268
+train HMM-12 loglik/window: -6.303796
+dev HMM-12 loglik/window: -6.313308
+test HMM-12 loglik/window: -6.424071
+
+Seed 1, horizon 3s:
+  Test windows=95,754; positives=396; base rate=0.00414
+  L1 current window: AP=0.02249, 95% CI [0.01901, 0.02961]
+  L2 + moving statistics: AP=0.02012, 95% CI [0.01653, 0.02783]
+  L3 + HMM state: AP=0.03127, 95% CI [0.02514, 0.04325]
+  L3 + GMM state: AP=0.03094, 95% CI [0.02500, 0.04230]
+  HMM-12 minus GMM-12: delta AP=0.00033, 95% CI [-0.00220, 0.00306]
+
+Seed 1, horizon 5s:
+  Test windows=95,702; positives=657; base rate=0.00687
+  L1 current window: AP=0.02092, 95% CI [0.01739, 0.02710]
+  L2 + moving statistics: AP=0.02174, 95% CI [0.01778, 0.02825]
+  L3 + HMM state: AP=0.02609, 95% CI [0.02103, 0.03516]
+  L3 + GMM state: AP=0.02685, 95% CI [0.02204, 0.03513]
+  HMM-12 minus GMM-12: delta AP=-0.00076, 95% CI [-0.00262, 0.00098]
+SEED 1 COMPLETED in 1.06 minutes.
+
+###########################################################################
+STARTING SEED 2
+###########################################################################
+Loading saved windows: /scratch/ponna/mrutyunjaya/output/phoneme_temporal_analysis_seed2/run_16a244efe3
+Loaded 107 streams and 399,468 windows.
+train: 209,269 windows
+dev: 94,304 windows
+test: 95,895 windows
+Loaded existing HMM-12 parameters for seed 2.
+Fitting GMM-12 on 150,000 of 209,269 training windows...
+GMM converged: True; iterations: 51
+GMM-12 train: loglik/window=-6.625784
+GMM-12 dev: loglik/window=-6.912582
+GMM-12 test: loglik/window=-6.636746
+train HMM-12 loglik/window: -6.461684
+dev HMM-12 loglik/window: -6.569583
+test HMM-12 loglik/window: -6.465933
+
+Seed 2, horizon 3s:
+  Test windows=95,792; positives=429; base rate=0.00448
+  L1 current window: AP=0.03068, 95% CI [0.02228, 0.04392]
+  L2 + moving statistics: AP=0.02382, 95% CI [0.01731, 0.03453]
+  L3 + HMM state: AP=0.03685, 95% CI [0.02593, 0.05264]
+  L3 + GMM state: AP=0.03865, 95% CI [0.02809, 0.05515]
+  HMM-12 minus GMM-12: delta AP=-0.00180, 95% CI [-0.00396, 0.00067]
+
+Seed 2, horizon 5s:
+  Test windows=95,740; positives=712; base rate=0.00744
+  L1 current window: AP=0.02500, 95% CI [0.01960, 0.03292]
+  L2 + moving statistics: AP=0.02201, 95% CI [0.01639, 0.02973]
+  L3 + HMM state: AP=0.02739, 95% CI [0.02052, 0.03726]
+  L3 + GMM state: AP=0.02784, 95% CI [0.02097, 0.03715]
+  HMM-12 minus GMM-12: delta AP=-0.00045, 95% CI [-0.00138, 0.00083]
+SEED 2 COMPLETED in 1.10 minutes.
+
+===========================================================================
+REANALYSIS FINISHED
+Successful seeds: [0, 1, 2]
+Failed seeds: []
+Total time: 3.27 minutes
+Output: /scratch/ponna/mrutyunjaya/output/reanalysis/gmm12_short_horizons_20261107_041447

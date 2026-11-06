@@ -1,0 +1,395 @@
+[
+  {
+    "seed": 0,
+    "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/gmm12_short_horizons_20261107_041447/seed0",
+    "elapsed_minutes": 1.0587605992952982,
+    "results": [
+      {
+        "seed": 0,
+        "horizon_seconds": 3,
+        "far": 5.0,
+        "test_windows": 94594,
+        "positive_windows": 311,
+        "base_rate": 0.003287734951476838,
+        "AP": {
+          "L1 current window": 0.023028002272481717,
+          "L2 + moving statistics": 0.017676836651411884,
+          "L3 + HMM state": 0.029607129700562423,
+          "L3 + GMM state": 0.03120830360159859
+        },
+        "AP_95_CI": {
+          "L1 current window": [
+            0.01622342934425813,
+            0.032106213758637016
+          ],
+          "L2 + moving statistics": [
+            0.01052435935896044,
+            0.027420413294898995
+          ],
+          "L3 + HMM state": [
+            0.01701814650189545,
+            0.05155645831109036
+          ],
+          "L3 + GMM state": [
+            0.017201329905850517,
+            0.055966871295982525
+          ]
+        },
+        "comparisons": {
+          "L3 + HMM state minus L3 + GMM state": {
+            "delta_AP": -0.0016011739010361667,
+            "CI_95": [
+              -0.006163866127473021,
+              0.0007142301532505246
+            ]
+          },
+          "L3 + HMM state minus L2 + moving statistics": {
+            "delta_AP": 0.01193029304915054,
+            "CI_95": [
+              0.005598322358940456,
+              0.025271022917480047
+            ]
+          },
+          "L3 + GMM state minus L2 + moving statistics": {
+            "delta_AP": 0.013531466950186706,
+            "CI_95": [
+              0.006027980480445073,
+              0.02889699460385885
+            ]
+          },
+          "L2 + moving statistics minus L1 current window": {
+            "delta_AP": -0.0053511656210698325,
+            "CI_95": [
+              -0.010249739115724217,
+              -0.0004919608797004677
+            ]
+          }
+        }
+      },
+      {
+        "seed": 0,
+        "horizon_seconds": 5,
+        "far": 5.0,
+        "test_windows": 94544,
+        "positive_windows": 512,
+        "base_rate": 0.0054154679302758505,
+        "AP": {
+          "L1 current window": 0.01951946652565579,
+          "L2 + moving statistics": 0.018565567714319116,
+          "L3 + HMM state": 0.02398486885422205,
+          "L3 + GMM state": 0.025281691748183358
+        },
+        "AP_95_CI": {
+          "L1 current window": [
+            0.014638732501384264,
+            0.026837974804204325
+          ],
+          "L2 + moving statistics": [
+            0.011901457380001096,
+            0.028838023766121167
+          ],
+          "L3 + HMM state": [
+            0.014567483955272322,
+            0.0402044924518889
+          ],
+          "L3 + GMM state": [
+            0.01533328065494219,
+            0.04297114667878186
+          ]
+        },
+        "comparisons": {
+          "L3 + HMM state minus L3 + GMM state": {
+            "delta_AP": -0.0012968228939613073,
+            "CI_95": [
+              -0.004456046911039261,
+              0.0004898315211544884
+            ]
+          },
+          "L3 + HMM state minus L2 + moving statistics": {
+            "delta_AP": 0.005419301139902934,
+            "CI_95": [
+              0.0022495938084115138,
+              0.013271662761532351
+            ]
+          },
+          "L3 + GMM state minus L2 + moving statistics": {
+            "delta_AP": 0.006716124033864242,
+            "CI_95": [
+              0.002321287315361574,
+              0.015228658316271218
+            ]
+          },
+          "L2 + moving statistics minus L1 current window": {
+            "delta_AP": -0.0009538988113366731,
+            "CI_95": [
+              -0.0054591376074083235,
+              0.004951261620968648
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "seed": 1,
+    "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/gmm12_short_horizons_20261107_041447/seed1",
+    "elapsed_minutes": 1.0603394349416098,
+    "results": [
+      {
+        "seed": 1,
+        "horizon_seconds": 3,
+        "far": 5.0,
+        "test_windows": 95754,
+        "positive_windows": 396,
+        "base_rate": 0.004135597468513065,
+        "AP": {
+          "L1 current window": 0.022493949418627743,
+          "L2 + moving statistics": 0.020119721462255914,
+          "L3 + HMM state": 0.03127261341407286,
+          "L3 + GMM state": 0.030942137518960754
+        },
+        "AP_95_CI": {
+          "L1 current window": [
+            0.01901051208023406,
+            0.029606343910782065
+          ],
+          "L2 + moving statistics": [
+            0.016527461208370862,
+            0.027829149623891936
+          ],
+          "L3 + HMM state": [
+            0.02513567431534811,
+            0.04325458690439205
+          ],
+          "L3 + GMM state": [
+            0.025001491765914523,
+            0.04229760447717296
+          ]
+        },
+        "comparisons": {
+          "L3 + HMM state minus L3 + GMM state": {
+            "delta_AP": 0.0003304758951121027,
+            "CI_95": [
+              -0.002200764998515574,
+              0.003060786351707759
+            ]
+          },
+          "L3 + HMM state minus L2 + moving statistics": {
+            "delta_AP": 0.011152891951816943,
+            "CI_95": [
+              0.007477996364405717,
+              0.01850177027312846
+            ]
+          },
+          "L3 + GMM state minus L2 + moving statistics": {
+            "delta_AP": 0.01082241605670484,
+            "CI_95": [
+              0.006870023045351136,
+              0.01792396724790812
+            ]
+          },
+          "L2 + moving statistics minus L1 current window": {
+            "delta_AP": -0.0023742279563718285,
+            "CI_95": [
+              -0.006173678452792233,
+              0.0012213238353543019
+            ]
+          }
+        }
+      },
+      {
+        "seed": 1,
+        "horizon_seconds": 5,
+        "far": 5.0,
+        "test_windows": 95702,
+        "positive_windows": 657,
+        "base_rate": 0.006865060291320975,
+        "AP": {
+          "L1 current window": 0.02092031395407678,
+          "L2 + moving statistics": 0.021736428222477074,
+          "L3 + HMM state": 0.02608628732757156,
+          "L3 + GMM state": 0.026846631804355293
+        },
+        "AP_95_CI": {
+          "L1 current window": [
+            0.017385276398114817,
+            0.027098413919571334
+          ],
+          "L2 + moving statistics": [
+            0.0177775759104045,
+            0.02825008856997762
+          ],
+          "L3 + HMM state": [
+            0.021030337846536507,
+            0.03516282627169972
+          ],
+          "L3 + GMM state": [
+            0.022039437963211374,
+            0.035126771451786776
+          ]
+        },
+        "comparisons": {
+          "L3 + HMM state minus L3 + GMM state": {
+            "delta_AP": -0.0007603444767837336,
+            "CI_95": [
+              -0.002619693526629063,
+              0.0009783868882916515
+            ]
+          },
+          "L3 + HMM state minus L2 + moving statistics": {
+            "delta_AP": 0.004349859105094486,
+            "CI_95": [
+              0.002475677369472049,
+              0.007828819433463809
+            ]
+          },
+          "L3 + GMM state minus L2 + moving statistics": {
+            "delta_AP": 0.00511020358187822,
+            "CI_95": [
+              0.0029976644708756793,
+              0.008469328731494427
+            ]
+          },
+          "L2 + moving statistics minus L1 current window": {
+            "delta_AP": 0.0008161142684002948,
+            "CI_95": [
+              -0.0024656681716436896,
+              0.0046131466909765965
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "seed": 2,
+    "output_directory": "/scratch/ponna/mrutyunjaya/output/reanalysis/gmm12_short_horizons_20261107_041447/seed2",
+    "elapsed_minutes": 1.099520500500997,
+    "results": [
+      {
+        "seed": 2,
+        "horizon_seconds": 3,
+        "far": 5.0,
+        "test_windows": 95792,
+        "positive_windows": 429,
+        "base_rate": 0.004478453315516953,
+        "AP": {
+          "L1 current window": 0.030678719885342844,
+          "L2 + moving statistics": 0.023819434406259977,
+          "L3 + HMM state": 0.03685158737182165,
+          "L3 + GMM state": 0.03865002497324954
+        },
+        "AP_95_CI": {
+          "L1 current window": [
+            0.022280299161994806,
+            0.043917004740071104
+          ],
+          "L2 + moving statistics": [
+            0.017313130602539854,
+            0.03452987558661356
+          ],
+          "L3 + HMM state": [
+            0.02593251393813693,
+            0.05263871277902717
+          ],
+          "L3 + GMM state": [
+            0.02808641303470767,
+            0.05515224506442383
+          ]
+        },
+        "comparisons": {
+          "L3 + HMM state minus L3 + GMM state": {
+            "delta_AP": -0.0017984376014278936,
+            "CI_95": [
+              -0.003956968769541276,
+              0.000671158088517929
+            ]
+          },
+          "L3 + HMM state minus L2 + moving statistics": {
+            "delta_AP": 0.01303215296556167,
+            "CI_95": [
+              0.007491068326971474,
+              0.021400669897593667
+            ]
+          },
+          "L3 + GMM state minus L2 + moving statistics": {
+            "delta_AP": 0.014830590566989564,
+            "CI_95": [
+              0.009109087080171498,
+              0.024324635971649335
+            ]
+          },
+          "L2 + moving statistics minus L1 current window": {
+            "delta_AP": -0.006859285479082867,
+            "CI_95": [
+              -0.01254893601387855,
+              -0.002570725478560902
+            ]
+          }
+        }
+      },
+      {
+        "seed": 2,
+        "horizon_seconds": 5,
+        "far": 5.0,
+        "test_windows": 95740,
+        "positive_windows": 712,
+        "base_rate": 0.007436808021725506,
+        "AP": {
+          "L1 current window": 0.025000077511303814,
+          "L2 + moving statistics": 0.02201134011420155,
+          "L3 + HMM state": 0.02739098483419531,
+          "L3 + GMM state": 0.027838737852350835
+        },
+        "AP_95_CI": {
+          "L1 current window": [
+            0.01960391428038136,
+            0.032916860620696806
+          ],
+          "L2 + moving statistics": [
+            0.016388210231406988,
+            0.029731524624007046
+          ],
+          "L3 + HMM state": [
+            0.020524260124931148,
+            0.03726196591487638
+          ],
+          "L3 + GMM state": [
+            0.020970759642209826,
+            0.03714842244686173
+          ]
+        },
+        "comparisons": {
+          "L3 + HMM state minus L3 + GMM state": {
+            "delta_AP": -0.00044775301815552435,
+            "CI_95": [
+              -0.0013793435828407467,
+              0.000832569364685408
+            ]
+          },
+          "L3 + HMM state minus L2 + moving statistics": {
+            "delta_AP": 0.005379644719993762,
+            "CI_95": [
+              0.0028983180595439635,
+              0.009806418119973596
+            ]
+          },
+          "L3 + GMM state minus L2 + moving statistics": {
+            "delta_AP": 0.005827397738149286,
+            "CI_95": [
+              0.003370180190111103,
+              0.009727716989256074
+            ]
+          },
+          "L2 + moving statistics minus L1 current window": {
+            "delta_AP": -0.002988737397102266,
+            "CI_95": [
+              -0.0067252619594309875,
+              0.0008229548224612371
+            ]
+          }
+        }
+      }
+    ]
+  }
+]
